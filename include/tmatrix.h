@@ -43,7 +43,7 @@ public:
   {
       if (sz == 0 || sz > MAX_MATRIX_SIZE)
       {
-          throw std::out_of_range("Vector size should be between 0 and " TMATRIX_EXPAND(MAX_MATRIX_SIZE));
+          throw std::out_of_range("Matrix size should be between 0 and " TMATRIX_EXPAND(MAX_MATRIX_SIZE));
       }
   }
 
