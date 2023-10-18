@@ -270,15 +270,11 @@ public:
     }
     friend std::ostream& operator<<(std::ostream& ostr, const TDynamicVector& v)
     {
-        for (size_t i = 0; i < v.sz - 1; i++)
+        for (size_t i = 0; i < v.sz; i++)
         {
             ostr << v.pMem[i];
-            if (v.sz > 1)
+            if (i < (v.sz - 1))
                 ostr << ' ';
-        }
-        if (v.sz > 1)
-        {
-            ostr << v.pMem[v.sz - 1];
         }
         return ostr;
     }
